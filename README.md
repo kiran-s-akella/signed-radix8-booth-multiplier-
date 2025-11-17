@@ -1,4 +1,4 @@
-# Signed Radix-8 Booth Multiplier using 5:3 Compressor (8-bit)
+# Radix-8 Booth Multiplier using 5:3 Compressor
 
 ## 1. Introduction
 This repository implements a signed Radix-8 Booth-encoded multiplier for 8-bit operands encoding three bits at a time. The design uses 5:3 compressors to speed up the partial-product accumulation stage reducing the critical path. The project includes Verilog sources, a testbench, simulation scripts, and a results folder for RTL schematics and performance comparison.
