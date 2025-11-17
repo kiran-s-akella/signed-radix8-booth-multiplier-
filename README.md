@@ -52,7 +52,7 @@ Overall, the design demonstrates an efficient and high-performance multiplier ar
 other high-speed computing applications.
 
 ## 6. References
-- [1] B. S., P. M., and V. M. B., “Design and Implementation of Signed Radix-8 Booth Encoded Multiplier Using 5:3 Compressor,” in Proceedings of the 2024 5th IEEE Global Conference for Advancement in Technology (GCAT), Karnataka, India, Oct. 4–6, 2024.
+[1] B. S., P. M., and V. M. B., “Design and Implementation of Signed Radix-8 Booth Encoded Multiplier Using 5:3 Compressor,” in Proceedings of the 2024 5th IEEE Global Conference for Advancement in Technology (GCAT), Karnataka, India, Oct. 4–6, 2024.
 
 
 
