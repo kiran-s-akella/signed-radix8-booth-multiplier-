@@ -11,7 +11,9 @@ A 5:3 compressor reduces five input bits and an input carry into three outputs (
 Key properties:
 - Inputs: A, B, C, D, E (and optional carry-in)
 - Outputs: S (sum), C0 (carry0), C1 (carry1) — position-weighted outputs
-  
+<img width="921" height="262" alt="image" src="https://github.com/user-attachments/assets/6ed1b92d-328d-437b-bdc1-b4dc81d96874" />
+
+
 ### 2.2 8-bit Structural Modelling
 Top-level approach:
 1. **Booth encoder** (Radix-8) groups multiplier bits in overlapping triplets to produce signed-digit partial product multiples: `-4, -3, -2, -1, 0, +1, +2, +3, +4` times multiplicand.
@@ -19,11 +21,12 @@ Top-level approach:
 3. **Reduction tree** built from 5:3 compressors (and final fast adder) to compress partial products to two rows.
 4. **Final adder** (e.g., ripple-carry / CLA) to produce the final signed product.
 
-Block diagram (files in `docs/architecture_diagram.svg`).
+<img width="953" height="516" alt="image" src="https://github.com/user-attachments/assets/9d12c1c0-c73d-4076-9c66-b77f756d6534" />
+
 
 ## 3. HDL Implementation Code
 - `src/compressor_5to3.v` — 5:3 compressor module
-- `src/booth_encoder.v` — Radix-8 recoder
+- `src/booth_encoder.v` — Radix-8 encoder
 - `src/partial_product_gen.v` — partial product generation (sign/negation/shift)
 - `src/radix8_booth_multiplier_8bit.v` — structural top (instantiates compressors & final adder)
 
